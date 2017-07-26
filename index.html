@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Finding Fido</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="top-bar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Finding Fido</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="about-us.html">About Us/Contact</a>
+             <!-- <a class="nav-item nav-link" href="view-all.html">View All Dogs</a> -->
+            <a class="nav-item nav-link disabled" href="resources.html">Resources</a>
+          </div>
+        </nav>
+
+    <h1 class="title">FINDING FIDO</h1>
+  </div>
+</div>
+
+    <div class="container">
+      <button id="searchAll" class="btn btn-primary">Search All Dogs</button>
+      <div class="well searchForm">
+
+        <h3 class="filterSearch">Filter Search:</h3>
+
+        <form id="dogSearchFilter">
+          <div class="row">
+            <div class="col-md-4">
+
+              <h4 class="searchCategory">Search by Age:</h4>
+              <div class="search form-group">
+                <input type="checkbox" name="dogAge" value="puppy">Puppy (up to 1 years old)<br>
+                <input type="checkbox" name="dogAge" value="adult">Adult (up to 7 years old)<br>
+                <input type="checkbox" name="dogAge" value="senior">Senior (7+ years old)<br>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h4 class="searchCategory">Search by Gender:</h4>
+              <div class="search form-group">
+                <input type="checkbox" name="dogGender" value="female">Female <br>
+                <input type="checkbox" name="dogGender" value="male">Male <br>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h4 class="searchCategory">Search by Size:</h4>
+              <div class="search form-group">
+                <input type="checkbox" name="dogSmall" value="small">Small (up to 20 lbs) <br>
+                <input type="checkbox" name="dogMedium" value="medium">Medium (up to 40 lbs) <br>
+                <input type="checkbox" name="dogLarge" value="large">Large (up to 60 lbs) <br>
+              </div>
+            </div>
+          </div>
+          <button type="submit" id="submitSearch" class="btn btn-primary">Show Results</button>
+        </form>
+      </div>
+
+      <div id="results">
+        <div id="show-all-results">
+
+        </div>
+        <div id="show-each-dog-bio-on-pic-click">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
